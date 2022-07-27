@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+    position: relative;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main::before {
+    content: '';
+    background: url('../img/n.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.input {
+    width: 400px;
+    font-weight: bold;
+    font-size: 15px;
+    background: #d4d7d83e;
+    border-radius: 8px;
+    border: rgba(245, 245, 245, 0.204) solid 1px;
+    color: #2a2a2a;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+::placeholder {
+    color: #9b9b9b;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin: 18px;
+    background-color: #f1896f5a;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16.5px;
+}
+
+.button:hover {
+    background-color: rgba(216, 87, 40, 0.272);
+    transition: all 0.4s ease-in;
+}
+
+.mainInput {
+    text-align: center;
+    padding: 1rem;
+}
+
+.info {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.weatherCondition {
+    margin-top: 15px;
+    font-weight: 700;
+    color: rgb(183, 183, 214);
+}
+
+.information {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 9rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(167, 167, 167, 0.279);
+    color: #e4e4e4;
+    font-weight: 600;
+}
+
+.same {
+    font-weight: 700;
+    color: rgb(10, 10, 10);
+}
+
+.name p {
+    font-size: 2.5rem;
+}
+
+.container {
+    text-align: center;
+    margin: 10px auto;
+}
+
+@media (min-width: 320px) and (max-width:480px) {
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .container {
+        margin-right: 70px;
+    }
+
+    .mainInput {
+        padding: 0%;
+        margin-left: 15px;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .button {
+        width: 60px;
+        font-size: 12px;
+        padding: 3px;
+        margin-right: 15px;
+    }
+
+    .information  {
+       padding: 3px;
+       width: 360px;
+    }
+
+    .information p {
+        font-size: 21px;
+        margin: auto 8px;
+    }
+
+    .info {
+        margin-left:35px;
+    }
+
+    .errorMsg {
+        font-size: 5px;
+    }
+}
